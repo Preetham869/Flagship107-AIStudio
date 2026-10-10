@@ -1,0 +1,70 @@
+/* Flagship 107 - Accessible AI Video Intelligence Styles */
+
+:root {
+  --color-bg-base: #070a12;
+  --color-bg-surface: #0b1120;
+  --color-bg-card: #0f172a;
+  --color-border: #1e293b;
+  --color-accent: #0284c7;
+  --color-accent-light: #38bdf8;
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessibility: Visible Focus Rings */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #38bdf8 !important;
+  outline-offset: 2px !important;
+}
+
+/* Accessibility: Large Text Mode */
+body.large-text-mode {
+  font-size: 18px;
+}
+
+body.large-text-mode p {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+}
+
+body.large-text-mode button {
+  font-size: 16px !important;
+  min-height: 48px !important;
+}
+
+body.large-text-mode h1 {
+  font-size: 34px !important;
+}
+
+body.large-text-mode h2 {
+  font-size: 26px !important;
+}
+
+/* Print Mode for Dossier Reports */
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body, .app-container {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}

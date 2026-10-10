@@ -1,0 +1,8 @@
+{
+  "name": "Flagship 107 - AI Video Intelligence",
+  "description": "Video intelligence and behavioral anomaly detection platform with entity tracking, event correlation, and AI-driven scene explanations.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
